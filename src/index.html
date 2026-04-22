@@ -1,35 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo Letter App</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <p>My Task Letters</p>
-        <button type="submit">New Letter</button>
+      <p>My Task Letters</p>
+      <button type="submit">New Letter</button>
     </header>
     <aside>
-        <ul>
-            <li><a href="#All">All</a></li>
-            <li><a>Active</a></li>
-            <li><a>Completed</a></li>
-            <li><a>High priority</a></li>
-            <li><a>Low priority</a></li>
-        </ul>
+      <ul>
+        <li><a href="#All">All</a></li>
+        <li><a>Active</a></li>
+        <li><a>Completed</a></li>
+        <li><a>High priority</a></li>
+        <li><a>Low priority</a></li>
+      </ul>
     </aside>
     <section>
-        <form>
-            <input type="text" placeholder="Title" class="title">
-            <textarea placeholder="Description" class="description"></textarea>
-            <button type="submit" class="addButton">Add</button>
-        </form>
+      <form>
+        <input type="text" placeholder="Title" class="title" />
+        <textarea placeholder="Description" class="description"></textarea>
+        <button type="submit" class="addButton">Add</button>
+      </form>
     </section>
     <section id="All">
-        <ul><li></li></ul>
+      <ul>
+        <li></li>
+      </ul>
     </section>
-    <script src="./main.js"></script>
-</body>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
