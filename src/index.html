@@ -11,27 +11,34 @@
       <p>My Task Letters</p>
       <button type="submit">New Letter</button>
     </header>
-    <aside>
-      <ul>
-        <li><a href="#All">All</a></li>
-        <li><a>Active</a></li>
-        <li><a>Completed</a></li>
-        <li><a>High priority</a></li>
-        <li><a>Low priority</a></li>
-      </ul>
-    </aside>
-    <section>
-      <form>
-        <input type="text" placeholder="Title" class="title" />
-        <textarea placeholder="Description" class="description"></textarea>
-        <button type="submit" class="addButton">Add</button>
-      </form>
-    </section>
-    <section id="All">
-      <ul>
-        <li></li>
-      </ul>
-    </section>
+    <div class="app">
+      <aside class="sidebar">
+        <ul>
+          <li class="active" data-filter="all">📋 All</li>
+          <li data-filter="active">⏳ Active</li>
+          <li data-filter="completed">✅ Completed</li>
+          <!-- <li>High priority</li>
+          <li>Low priority</li> -->
+        </ul>
+      </aside>
+      <div class="modal hidden">
+        <div class="modal-content">
+          <form>
+            <button type="button" class="closeModal">✕</button>
+            <input type="text" placeholder="Title" class="title" />
+            <textarea placeholder="Description" class="description"></textarea>
+            <button type="submit" class="addButton">Add</button>
+          </form>
+        </div>
+      </div>
+      <main class="content">
+        <section id="All">
+          <ul></ul>
+        </section>
+      </main>
+    </div>
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script src="./js/filters.js"></script>
   </body>
 </html>

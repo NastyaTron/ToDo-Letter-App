@@ -1,4 +1,5 @@
 import { saveTodo, getTodo } from './js/storage.js';
+import { modal } from './js/modal.js';
 
 const addButton = document.querySelector('.addButton');
 const title = document.querySelector('.title');
@@ -58,4 +59,6 @@ addButton.addEventListener('click', function () {
 
   title.value = '';
   description.value = '';
+
+  modal.classList.add('hidden');
 });
