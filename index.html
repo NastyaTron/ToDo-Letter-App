@@ -5,33 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo Letter App</title>
     <script type="module" crossorigin src="/ToDo-Letter-App/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/ToDo-Letter-App/assets/index-T9xVPOJO.css">
+    <link rel="stylesheet" crossorigin href="/ToDo-Letter-App/assets/index-h8cvls5C.css">
   </head>
   <body>
     <header>
       <p>My Task Letters</p>
       <button type="submit">New Letter</button>
     </header>
-    <aside>
-      <ul>
-        <li><a href="#All">All</a></li>
-        <li><a>Active</a></li>
-        <li><a>Completed</a></li>
-        <li><a>High priority</a></li>
-        <li><a>Low priority</a></li>
-      </ul>
-    </aside>
-    <section>
-      <form>
-        <input type="text" placeholder="Title" class="title" />
-        <textarea placeholder="Description" class="description"></textarea>
-        <button type="submit" class="addButton">Add</button>
-      </form>
-    </section>
-    <section id="All">
-      <ul>
-        <li></li>
-      </ul>
-    </section>
+    <div class="app">
+      <aside class="sidebar">
+        <ul>
+          <li class="active" data-filter="all">📋 All</li>
+          <li data-filter="active">⏳ Active</li>
+          <li data-filter="completed">✅ Completed</li>
+          <!-- <li>High priority</li>
+          <li>Low priority</li> -->
+        </ul>
+      </aside>
+      <div class="modal hidden">
+        <div class="modal-content">
+          <form>
+            <button type="button" class="closeModal">✕</button>
+            <input type="text" placeholder="Title" class="title" />
+            <textarea placeholder="Description" class="description"></textarea>
+            <button type="submit" class="addButton">Add</button>
+          </form>
+        </div>
+      </div>
+      <main class="content">
+        <section id="All">
+          <ul></ul>
+        </section>
+      </main>
+    </div>
+    <script src="./js/filters.js"></script>
   </body>
 </html>
